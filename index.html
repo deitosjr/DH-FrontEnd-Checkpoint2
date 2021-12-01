@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Checkpoint 2</title>
+
+       <link rel="stylesheet" href="style.css">
+
+       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+    </style>
+
+   </head>
+   <body>
+
+    <header>
+        <h1>Conheça Maringá!</h1>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+        <form>
+            <div class="row">
+                <legend>Nome</legend>
+                <input type="text" name="nome" placeholder="Seu nome completo" maxlength="100" required>
+            </div>
+            <div class="row">
+                <legend>Email </legend>
+                <input type="mail" name="email" placeholder="Seu email" required>
+            </div>
+            <div class="row">
+                <legend>Telefone</legend>
+                <input type="number" name="telefone" placeholder="Seu telefone com DDD" required>
+            </div>
+            <div class="row">
+                <legend>Data de nascimento</legend>
+                <input type="date" name="nascimento" placeholder="" required>
+            </div>
+            <div class="row">
+                <legend>+ de 18 anos?</legend>
+                <input type="radio" name="maioridade" id="maiorsim" value="Sim" required><label for="maiorsim">Sim</label>
+                <input type="radio" name="maioridade" id="maiornao" value="Não" required><label for="maiornao">Não</label>
+            </div>
+            <div class="row">
+                <legend>Ponto turístico preferido</legend>
+                <select name="pontoturistico">
+                    <option value="">Selecione...</option>
+                    <option value="Catedral">Catedral</option>
+                    <option value="Parque do Japão">Parque do Japão</option>
+                    <option value="Parque do Ingá">Parque do Ingá</option>
+                </select>
+            </div>
+            <div class="row">
+                <legend>Seu interesse na cidade:</legend>
+                <input type="checkbox" name="interesse" id="Turista" value="Turista" required><label for="Turista">Turista</label>
+                <input type="checkbox" name="interesse" id="Residente" value="Residente" required><label for="Residente">Residente</label>
+                <input type="checkbox" name="interesse" id="Estudante" value="Estudante" required><label for="Estudante">Estudante</label>
+            </div>
+            <div class="row row-buttons">
+
+                <input type="reset" name="limpar" value="Limpar"/>
+                <input type="submit" name="enviar" value="Enviar"/>
+            </div>
+        
+        </form>
+        </div>
+
+    </main>
+
+   </body>
+</html>
